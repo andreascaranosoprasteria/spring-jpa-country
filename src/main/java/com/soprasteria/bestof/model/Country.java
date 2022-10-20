@@ -15,7 +15,7 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "country")
+@Table(name = "countries")
 public class Country {
 	
 	@Id
@@ -26,8 +26,8 @@ public class Country {
 	private String name;
 	private BigDecimal area;
 	
-	@Column(name = "national_day")
-	private LocalDate nationalDay;
+	//@Column(name = "national_day")
+	//private LocalDate nationalDay;
 	
 	@Column(name = "country_code2")
 	private char countryCode2;
@@ -65,13 +65,13 @@ public class Country {
 		this.area = area;
 	}
 
-	public LocalDate getNationalDay() {
-		return nationalDay;
-	}
+	//public LocalDate getNationalDay() {
+	//	return nationalDay;
+	//}
 
-	public void setNationalDay(LocalDate nationalDay) {
-		this.nationalDay = nationalDay;
-	}
+	//public void setNationalDay(LocalDate nationalDay) {
+	//	this.nationalDay = nationalDay;
+	//}
 
 	public char getCountryCode2() {
 		return countryCode2;
